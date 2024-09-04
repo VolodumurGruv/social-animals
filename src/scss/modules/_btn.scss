@@ -10,8 +10,15 @@
     font-family: fonts.$font-rubik-regular;
     font-size: px-to-rem.px-to-rem(16);
     line-height: 140%;
-    letter-spacing: .07em;
+    letter-spacing: 0.07em;
     color: colors.$color-white;
     background-color: colors.$color-arrows;
+  }
+
+  &__help__animals {
+    @extend .btn__subscription;
+    font-size: px-to-rem.px-to-rem(32);
+    line-height: 38px;
+    letter-spacing: -0.04em;
   }
 }

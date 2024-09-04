@@ -116,6 +116,10 @@
   padding-top: px-to-rem.px-to-rem(71);
   margin: 0 auto;
 
+  &__icon {
+    cursor: pointer;
+  }
+
   &__icon:not(:last-child) {
     padding-right: px-to-rem.px-to-rem(25);
   }

@@ -1,0 +1,110 @@
+@use "../functions/px-to-rem";
+@use "../colors";
+@use "../lib/typography/fonts";
+
+.home {
+  &__tittle {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__img {
+    &__big {
+      position: relative;
+      width: px-to-rem.px-to-rem(471);
+      height: px-to-rem.px-to-rem(623);
+      z-index: 1;
+    }
+
+    &__angle-border-bg {
+      width: px-to-rem.px-to-rem(373);
+      height: px-to-rem.px-to-rem(563);
+      border: 1px solid colors.$color-orange-border;
+      rotate: -11deg;
+      border-radius: 143px;
+      position: absolute;
+      z-index: 1;
+    }
+
+    &__small {
+      position: relative;
+      width: px-to-rem.px-to-rem(158);
+      height: px-to-rem.px-to-rem(206.6);
+      padding-top: px-to-rem.px-to-rem(13);
+      border-radius: 36px;
+      align-self: flex-start;
+      justify-self: flex-end;
+      z-index: 1;
+    }
+
+    &__angle-border-sm {
+      width: px-to-rem.px-to-rem(125.4);
+      height: px-to-rem.px-to-rem(187.8);
+      border: 1px solid colors.$color-orange-border;
+      rotate: -10deg;
+      border-radius: 36px;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+}
+
+.tittle {
+  display: grid;
+  grid-template: repeat(3, 0.1fr) / px-to-rem.px-to-rem(453) 1fr;
+  align-items: center;
+  z-index: 1;
+
+  &__obj {
+    width: px-to-rem.px-to-rem(353);
+    border-bottom: 1px solid colors.$color-light-brown;
+  }
+
+  &__home {
+    font-family: fonts.$font-raleway-regular;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 150%;
+    color: colors.$color-main-dark-blue;
+    text-transform: uppercase;
+
+    &__long {
+      grid-column: span 3;
+      justify-self: end;
+    }
+
+    &__short {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+  }
+
+  &__obj {
+    // grid-column: span 2;
+    justify-self: start;
+  }
+
+  &__text__italic {
+    font-family: fonts.$font-raleway-italic;
+    color: colors.$color-arrows;
+    letter-spacing: 0;
+    font-weight: 400;
+  }
+
+  &__btn {
+    align-self: flex-start;
+    justify-self: flex-end;
+    padding-top: px-to-rem.px-to-rem(152);
+  }
+}
+
+.curved__line {
+  position: absolute;
+  z-index: 0;
+  top: 384px;
+}
+
+.img__curved__line {
+  width: 100%;
+  height: 100%;
+}

@@ -1,28 +1,24 @@
-
 import { Component, HostListener } from '@angular/core';
 import { NgClass } from '@angular/common';
 
 import { DropArrowsIconComponent } from '../drop-arrows-icon/drop-arrows-icon.component';
 import { navData } from '../config/navData';
 
-
-
-
 @Component({
   selector: 'app-header',
   standalone: true,
   imports: [DropArrowsIconComponent, NgClass],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  logoUrl = "../../../scss/lib/pics/logo.png";
-  svgUrl = "../../../scss/lib/pics/svg/arrow-down.svg";
-  logoAlt = "чотирилапі герої";
+  logoUrl = '../../../scss/lib/pics/logo.png';
+  svgUrl = '../../../scss/lib/pics/svg/arrow-down.svg';
+  logoAlt = 'чотирилапі герої';
   navData = navData;
   isUaActive = true;
   isEnActive = false;
-/*
+  /*
   @HostListener('document:click', ['$event']) onClick(event: Event): void {
     const target = event.target as HTMLElement;
     console.log(target.innerText)
@@ -31,26 +27,23 @@ export class HeaderComponent {
   }
 */
 
-
-  openClose (id: number | null) {
-    this.navData.forEach(item => {
-      if(item.id === id) {
-
+  openClose(id: number | null): void {
+    this.navData.forEach((item) => {
+      if (item.id === id) {
         item.isOpened = !item.isOpened;
       } else {
         item.isOpened = false;
       }
-    })
+    });
   }
 
-
-  currentLang(lang: string) {
-    if(lang === "ua") {
+  currentLang(lang: string): void {
+    if (lang === 'ua') {
       this.isUaActive = true;
       this.isEnActive = false;
     }
 
-    if(lang === "en") {
+    if (lang === 'en') {
       this.isEnActive = true;
       this.isUaActive = false;
     }
