@@ -20,5 +20,19 @@
     font-size: px-to-rem.px-to-rem(32);
     line-height: 38px;
     letter-spacing: -0.04em;
+    background-color: colors.$color-main-dark-blue;
+    box-shadow: 4px 4px 16.5px 0px inset colors.$color-shadow-blue;
+  }
+
+  &__adv {
+    font-family: fonts.$font-rubik-regular;
+    font-weight: 300;
+    line-height: px-to-rem.px-to-rem(38);
+    font-size: px-to-rem.px-to-rem(32);
+    letter-spacing: -0.04em;
+    background-color: colors.$color-bg-btn-white;
+    border: 1px solid colors.$color-text-dgrey;
+    color: colors.$color-text-btn-blue;
+    box-shadow: 2px 4px 13px 0 colors.$color-shadow-dark;
   }
 }

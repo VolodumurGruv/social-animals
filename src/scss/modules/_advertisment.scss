@@ -1,0 +1,52 @@
+@use "../colors";
+@use "../functions/px-to-rem";
+@use "../lib/typography/fonts";
+// @use "../modules/btn";
+
+.adv {
+  padding-top: px-to-rem.px-to-rem(68);
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1440px;
+  }
+
+  &__support,
+  &__help {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 598px;
+    border-radius: 51px;
+    border: 1px solid colors.$color-light-blue;
+  }
+
+  &__tittle {
+    text-align: center;
+    font-family: fonts.$font-raleway-regular;
+    font-weight: 500;
+    line-height: px-to-rem.px-to-rem(47);
+    font-size: px-to-rem.px-to-rem(40);
+    padding: px-to-rem.px-to-rem(59) px-to-rem.px-to-rem(43)
+      px-to-rem.px-to-rem(38);
+    color: colors.$color-main-black;
+  }
+
+  &__text {
+    max-width: px-to-rem.px-to-rem(446);
+    padding-bottom: px-to-rem.px-to-rem(49);
+    font-family: fonts.$font-rubik-regular;
+    font-size: px-to-rem.px-to-rem(26);
+    line-height: px-to-rem.px-to-rem(31);
+    font-weight: 300;
+    text-align: center;
+    color: colors.$color-text-dgrey;
+  }
+
+  &__button {
+    padding-bottom: px-to-rem.px-to-rem(58);
+  }
+}
