@@ -8,20 +8,20 @@
 
 @font-face {
   font-family: Raleway-italic;
-  src: url('./fonts/raleway/static/Raleway-Italic.ttf');
+  src: url("./fonts/raleway/static/Raleway-Italic.ttf");
   font-weight: 400;
 }
 
 @font-face {
   font-family: Raleway-medium;
-  src: url('./fonts/raleway/static/Raleway-Medium.ttf');
+  src: url("./fonts/raleway/static/Raleway-Medium.ttf");
   font-weight: 400;
 }
 
 @font-face {
   font-family: Rubik;
-  src: url('./fonts/rubik/static/Rubik-Regular.ttf');
-  font-weight: 400;
+  src: url("./fonts/rubik/static/Rubik-Regular.ttf");
+  font-weight: 300;
 }
 
 $font-raleway-regular: Raleway;
