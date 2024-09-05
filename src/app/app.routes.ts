@@ -16,13 +16,6 @@ export const routes: Routes = [
     ],
   },
   {
-    path: 'registration',
-    loadComponent: () =>
-      import('./components/registration/registration.component').then(
-        (c) => c.RegistrationComponent
-      ),
-  },
-  {
     path: '**',
     loadComponent: () =>
       import('./components/page-not-found/page-not-found.component').then(
