@@ -1,0 +1,1 @@
+import{Ja as a,Ka as i,Pa as r,U as o,Wa as p}from"./chunk-WHUMCT66.js";var c=(()=>{let e=class e{};e.\u0275fac=function(n){return new(n||e)},e.\u0275cmp=o({type:e,selectors:[["app-page-not-found"]],standalone:!0,features:[p],decls:2,vars:0,template:function(n,d){n&1&&(a(0,"p"),r(1,"page-not-found works!"),i())}});let t=e;return t})();export{c as PageNotFoundComponent};
