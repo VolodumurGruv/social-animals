@@ -20,6 +20,7 @@
 
 .nav {
   padding: px-to-rem.px-to-rem(10);
+  z-index: 100;
 
   &__items {
     @include flex.space-between();
@@ -42,7 +43,8 @@
 .drop-down-menu__item:hover {
   // border-bottom: 2px solid colors.$color-active;
   text-decoration: 2px solid underline colors.$color-active;
-  padding-bottom: 0.1rem;
+  // padding-bottom: 0.1rem;
+
   // transition: 500ms ease-in-out;
 }
 
@@ -52,6 +54,7 @@
   position: absolute;
   transition: 500ms ease-in-out;
   animation: drop-down 700ms ease-in-out;
+  left: -0.5rem;
 
   &__items {
     display: flex;
@@ -60,13 +63,15 @@
   }
 
   &__item {
-    width: px-to-rem.px-to-rem(288);
-    padding-top: px-to-rem.px-to-rem(31);
+    width: max-content;
+    padding: px-to-rem.px-to-rem(31) 0 0.5rem 0.5rem;
     border-bottom: 2px solid transparent;
     font-family: fonts.$font-raleway-regular;
     font-size: px-to-rem.px-to-rem(24);
     color: colors.$color-main-black;
     letter-spacing: -0.04em;
+    background-color: colors.$color-bg-body;
+    cursor: pointer;
   }
 }
 
