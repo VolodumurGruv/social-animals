@@ -48,7 +48,8 @@
   &__img__right {
     position: relative;
     align-self: flex-end;
-    top: px-to-rem.px-to-rem(-270);
+    top: px-to-rem.px-to-rem(-280);
+    right: px-to-rem.px-to-rem(87);
     cursor: pointer;
   }
 
@@ -76,8 +77,7 @@
 
   &__img__above {
     position: absolute;
-    left: px-to-rem.px-to-rem(98);
+    left: px-to-rem.px-to-rem(100);
     top: px-to-rem.px-to-rem(337);
-    z-index: 10;
   }
 }
