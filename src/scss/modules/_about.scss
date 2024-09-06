@@ -18,6 +18,7 @@
     padding-top: px-to-rem.px-to-rem(92);
     padding-bottom: px-to-rem.px-to-rem(61);
     text-align: center;
+    color: colors.$color-arrows;
   }
 
   &__subtittle {
@@ -28,16 +29,12 @@
     text-align: center;
     padding-bottom: px-to-rem.px-to-rem(59);
     max-width: 870px;
+    color: colors.$color-main-black;
   }
 
   &__text {
-    font-family: fonts.$font-rubik-regular;
-    font-weight: 300;
-    font-size: px-to-rem.px-to-rem(24);
-    line-height: px-to-rem.px-to-rem(34);
-    text-align: center;
+    @extend .about__subtittle;
     max-width: 559px;
-    text-align: center;
   }
 
   &__img__left {
@@ -48,7 +45,7 @@
   &__img__right {
     position: relative;
     align-self: flex-end;
-    top: px-to-rem.px-to-rem(-280);
+    top: px-to-rem.px-to-rem(-340);
     right: px-to-rem.px-to-rem(87);
     cursor: pointer;
   }
@@ -69,7 +66,6 @@
   position: absolute;
   top: px-to-rem.px-to-rem(280);
   left: px-to-rem.px-to-rem(40);
-
   width: px-to-rem.px-to-rem(142);
   height: px-to-rem.px-to-rem(142);
   border-radius: 50%;
