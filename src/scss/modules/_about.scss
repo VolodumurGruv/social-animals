@@ -1,0 +1,83 @@
+@use "../colors";
+@use "../functions/px-to-rem";
+@use "../lib/typography/fonts";
+
+.about {
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__tittle {
+    font-family: fonts.$font-raleway-regular;
+    font-size: px-to-rem.px-to-rem(48);
+    font-weight: 500;
+    line-height: px-to-rem.px-to-rem(67);
+    letter-spacing: 0.07em;
+    padding-top: px-to-rem.px-to-rem(92);
+    padding-bottom: px-to-rem.px-to-rem(61);
+    text-align: center;
+  }
+
+  &__subtittle {
+    font-family: fonts.$font-rubik-regular;
+    font-weight: 300;
+    font-size: px-to-rem.px-to-rem(24);
+    line-height: px-to-rem.px-to-rem(34);
+    text-align: center;
+    padding-bottom: px-to-rem.px-to-rem(59);
+    max-width: 870px;
+  }
+
+  &__text {
+    font-family: fonts.$font-rubik-regular;
+    font-weight: 300;
+    font-size: px-to-rem.px-to-rem(24);
+    line-height: px-to-rem.px-to-rem(34);
+    text-align: center;
+    max-width: 559px;
+    text-align: center;
+  }
+
+  &__img__left {
+    position: relative;
+    align-self: flex-start;
+  }
+
+  &__img__right {
+    position: relative;
+    align-self: flex-end;
+    top: px-to-rem.px-to-rem(-270);
+    cursor: pointer;
+  }
+
+  &__bg__line {
+    position: absolute;
+
+    img {
+      position: relative;
+      top: px-to-rem.px-to-rem(27);
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.circle {
+  position: absolute;
+  top: px-to-rem.px-to-rem(280);
+  left: px-to-rem.px-to-rem(40);
+
+  width: px-to-rem.px-to-rem(142);
+  height: px-to-rem.px-to-rem(142);
+  border-radius: 50%;
+  background-color: colors.$color-bg-circle-blue;
+
+  &__img__above {
+    position: absolute;
+    left: px-to-rem.px-to-rem(98);
+    top: px-to-rem.px-to-rem(337);
+    z-index: 10;
+  }
+}

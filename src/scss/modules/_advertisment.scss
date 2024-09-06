@@ -5,6 +5,8 @@
 
 .adv {
   padding-top: px-to-rem.px-to-rem(68);
+  padding-bottom: px-to-rem.px-to-rem(68);
+
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
